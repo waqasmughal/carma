@@ -13,6 +13,9 @@ function onSubmit() {
         if (xmlHttp.readyState == 4) {
             alert(xmlHttp.responseText);
         }
+        if (xmlHttp.status === 200) {
+            document.getElementById('creditCardForm').reset();
+        }
     }
     xmlHttp.open('post', '/v1/api/creditcards/');
     xmlHttp.setRequestHeader('Content-Type', 'application/json');
