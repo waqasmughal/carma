@@ -28,10 +28,6 @@ DBNAME=carmadb
 npm install
 ```
 
-```
-npm install
-```
-
 ### Run
 ```
 npm start
