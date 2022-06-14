@@ -46,7 +46,7 @@ The following are the Rest APIs that will be exported:
 - Validate credit card on frontend side as well to avoid request on backend
 - Enable Cors, XSS, DOS attack prevention
 
-## credit card number validation
+## Credit card number validation
 
 As per requirement i used Luhn's algorithm to determines whether or not a credit card number is valid. If card is valid then encrypt and save into database and show message to user.
 
@@ -57,10 +57,10 @@ For credit card number Luhn's algorithm do following tasks:
 - If the result mod 10 is equal to 0, the number is valid. If the result mod 10 is not equal to 0, the validation fails.
 
 ## Test Cards
-Credit Card Type	Credit Card Number
-MasterCard	        5555555555554444
-MasterCard	        5105105105105100
-Visa	            4111111111111111
-Visa	            4012888888881881
+- Credit Card Type	    Credit Card Number
+- MasterCard	        5555555555554444
+- MasterCard	        5105105105105100
+- Visa	                4111111111111111
+- Visa	                4012888888881881
 
 
