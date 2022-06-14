@@ -15,19 +15,20 @@ I setup express.js and add postgreeSQL and sequelize to connect database with th
 
 
 ## Project setup
-
+```
+git clone https://github.com/waqasmughal/carma.git
+```
 ## Update .env variables as per your machine
 
-HOST=localhost
-USERNAME=postgres
-PASSWORD=admin
-DBNAME=carmadb
+- HOST=localhost
+- USERNAME=postgres
+- PASSWORD=admin
+- DBNAME=carmadb
 
-## Install node_modules
+## Install Dependcies
 ```
 npm install
 ```
-
 ### Run
 ```
 npm start
