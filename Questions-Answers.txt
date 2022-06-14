@@ -1,0 +1,62 @@
+1) What is the result of this code in the console
+
+for (var i = 0; i < 100; i++) {
+    setTimeout(function () {
+        console.log(i);
+    }, 200);
+}
+
+Ans) Output would be 99 because of "var" inside for loop.But if we used "let" inside for loop 
+it show 0 - 99 because let has its own local scope.
+
+
+2) What is the result of this code in the console
+
+    (async function () {
+        function waitForMe() {
+            return new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    resolve("hello");
+                }, 200);
+            });
+        }
+        const result = await waitForMe();
+        console.log(result);
+    })();
+
+Ans) Output would be "hello".This method is actually async self invoking method.
+waitForMe is another method which returns promise resolve after specific time elapsed.
+So, await resolve promise and get data as "hello".
+
+3) Explain the difference
+var a;
+let b;
+const c;
+
+var is can be re-declared and updated.It has a global scope.
+
+let is declared in a block  and use within that block.
+
+const cannot be updated or re-declared with in a scope.
+
+4) What is the result of this code in the console
+
+We got a module "test.js":
+var arr = [];
+module.exports = arr;
+
+We got a module using it:
+
+var test = require("./test");
+test.push("hello");
+console.log(JSON.stringify(test));
+
+We got another module using it later:
+
+var test = require("./test");
+test.push("another");
+console.log(JSON.stringify(test));
+
+Ans) First output would be ["hello"] and after other module output would be ["hello", "another"]
+
+
