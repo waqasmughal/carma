@@ -41,6 +41,7 @@ The following are the Rest APIs that will be exported:
 
 ## Improvements
 - We can deal with multiple improvements in future like validate card expiry date
+- Add migrations for database
 - We can add acl role based to protect routes
 - Add JWT authentication
 - Validate credit card on frontend side as well to avoid request on backend
